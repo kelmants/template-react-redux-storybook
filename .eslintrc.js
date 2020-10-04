@@ -2,7 +2,6 @@ module.exports = {
   env: {
     es6: true,
     browser: true,
-    es2021: true,
     jest: true,
   },
   extends: [
@@ -16,7 +15,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 12,
+    ecmaVersion: 2017,
     sourceType: 'module',
   },
   plugins: ['react', 'jest'],
@@ -28,5 +27,10 @@ module.exports = {
     'jest/no-identical-title': 'error',
     'jest/prefer-to-have-length': 'warn',
     'jest/valid-expect': 'error',
+  },
+  settings: {
+    react: {
+      version: 'latest',
+    },
   },
 }
