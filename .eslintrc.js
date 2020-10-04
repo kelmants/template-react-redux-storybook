@@ -13,14 +13,16 @@ module.exports = {
   ],
   parserOptions: {
     ecmaFeatures: {
+      experimentalObjectRestSpread: true,
       jsx: true,
     },
-    ecmaVersion: 2017,
+    ecmaVersion: 2018,
     sourceType: 'module',
   },
   plugins: ['react', 'jest'],
   rules: {
     'space-before-function-paren': ['error', 'never'],
+    'comma-dangle': ['error', 'only-multiline'],
     'prettier/prettier': 'error',
     'jest/no-disabled-tests': 'warn',
     'jest/no-focused-tests': 'error',
