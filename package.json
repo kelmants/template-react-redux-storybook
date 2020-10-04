@@ -17,7 +17,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "yarn prettier --write .",
-    "lint": "eslint . --ext .js,.jsx"
+    "lint": "eslint . --ext .js,.jsx",
+    "analyze": "yarn build && source-map-explorer 'build/static/js/*.js'"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,7 +46,8 @@
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.3.0",
     "lint-staged": ">=10",
-    "prettier": "2.1.2"
+    "prettier": "2.1.2",
+    "source-map-explorer": "^2.5.0"
   },
   "husky": {
     "hooks": {
